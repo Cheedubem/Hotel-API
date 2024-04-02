@@ -2,10 +2,10 @@
   "name": "apitask1",
   "version": "1.0.0",
   "description": "apitask by Cheedubem",
-  "main": "app.ts",
-  "type": "module",
+  "main": "app.js", // Change this to point to the compiled JavaScript file
   "scripts": {
-    "start": "node app.ts"
+    "start": "node app.js", // Change this to run the compiled JavaScript file
+    "build": "tsc" // Add a build script to compile TypeScript to JavaScript
   },
   "author": "\"Cheedubem\"",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "@types/body-parser": "^1.19.5",
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.6",
-    "@types/mongoose": "^5.11.97"
+    "@types/mongoose": "^5.11.97",
+    "typescript": "^4.5.4" // Make sure TypeScript is installed as a dev dependency
   }
 }
